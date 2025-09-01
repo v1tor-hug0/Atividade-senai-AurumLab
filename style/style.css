@@ -1,30 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-    --fundo: #132437;
-    --bg-home: #010300;
-    --linha-decorativa: #c7cdd6;
-    --texto-suave: #b3c0cf;
-    --branco: #FFFFFF;
-    --amarelo: #f7c13c;
-    --borda-suave: rgba(255, 255, 255, 0.2);
-    --sombra-passo-clara: rgba(145, 145, 145, 0.2);
-    --sombra-passo-escura: rgba(0,0,0,0.5);
-    --sombra-neo-clara: rgba(255, 255, 255, 0.7);
-    --sombra-neo-escura: rgba(0,0,0,0.8);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Noto Sans", sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: var(--bg-home);
     color: var(--branco);
@@ -328,6 +301,46 @@ h2 {
 /* rodaope */
 
 .rodape {
-    background-color: var(--fundo);
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--fundo);
+    padding: 2% 10%;
+    color: var(--branco);
+    height: 40vh; 
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-rodape {
+    width: 200px;
+}
+
+.lista-rodape {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+}
+
+.lista-rodape a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.linha-divisoria {
+    height: 1px;
+    background-color: var(--borda-suave);
+    margin-top: 20px;
+}
+
+.direitos {
+    text-align: center;
+    color: var(--texto-suave);
+    font-size: 1em;
+    margin-top: 20px;
 }
